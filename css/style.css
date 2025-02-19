@@ -5,7 +5,7 @@ body {
   box-sizing: border-box;
 }
 
-.navbar li:not(.dropdown-menu li) {
+.navbar li {
   margin-left: 20px;
   margin-top: -9px;
   font-size: larger;
@@ -17,8 +17,6 @@ body {
 .navbar li a:hover {
   color: rgb(254, 254, 254) !important;
   text-decoration: underline;
-  /* transition: .3S;
-  font-weight: bold; */
 }
 .navbar .btn {
   background-color: rgb(141, 141, 143);
@@ -311,8 +309,8 @@ text-align: center;
     align-items: center;
   }
   .cart_products{
-    top: 160px;
-    left: 100px;
+    top: 200px;
+    left: 120px;
     width: 200px;
   }
 }
