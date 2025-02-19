@@ -6,17 +6,30 @@ if (productarray) {
     draw(items);
 }
 
+// function remove(Id) {
+//     let newArr = JSON.parse(localStorage.getItem("cartproducts")); // استرجاع المصفوفة المحدثة دائمًا
+//     let index = newArr.findIndex((item) => item.id === Id);
+
+//     if (index !== -1) { // التحقق إن العنصر موجود قبل الحذف
+//         newArr.splice(index, 1);
+//         draw(newArr);
+//         localStorage.setItem("cartproducts", JSON.stringify(newArr));
+        
+//         // تحديث المتغير ليعكس التغيير
+//         productarray = JSON.stringify(newArr);
+//     }
+// }
 function remove(Id) {
-    let newArr = JSON.parse(localStorage.getItem("cartproducts")); // استرجاع المصفوفة المحدثة دائمًا
+    let newArr = JSON.parse(localStorage.getItem("cartproducts"));
     let index = newArr.findIndex((item) => item.id === Id);
 
-    if (index !== -1) { // التحقق إن العنصر موجود قبل الحذف
+    if (index !== -1) {
         newArr.splice(index, 1);
         draw(newArr);
         localStorage.setItem("cartproducts", JSON.stringify(newArr));
-        
-        // تحديث المتغير ليعكس التغيير
-        productarray = JSON.stringify(newArr);
+
+        // 🔥 عمل Reload للصفحة الرئيسية بعد الحذف مباشرةً
+        window.location.reload();
     }
 }
 
@@ -58,7 +71,7 @@ function calcPrice(array){
     }
     return total;
     if (total==0){
-        window.location="index.html"
-        window.location.reload();
+       window.location.reload()="index.html"
+        // window.location.reload();
     }
 }
