@@ -147,7 +147,7 @@ body {
   font-size: xx-large;
   width: 80px;
   margin-left: 76%;
-  margin-top: 10%;
+  margin-top: 110%;
 
 }
 .removecart{
@@ -201,26 +201,21 @@ body {
   color: aliceblue;
   font-size: x-large;
   cursor: pointer;
-  margin:10px 20px;
+  margin:10px 10px;
 }
+
 #user_account{
   font-size:70px ;
   margin-bottom: 30px;
 }
-#mode_icon1,#mode_icon2{
+/* #mode_icon1,#mode_icon2{
   cursor: pointer;
   font-size: 40px;
   position: fixed;
   top: 80px;
   right: 10px;
-}
-#mode_icon1{
-  display: none;
-  color: rgb(1, 57, 1);
-}
-#mode_icon2{
-  color: rgb(238, 241, 237);
-}
+} */
+
 .cart_products{
   display: none;
   background-color: #997C70;
@@ -282,16 +277,18 @@ text-align: center;
 /* mediaquery */
 @media (max-width:600px){
   .hello{
-    height: 50%;
+    height: 40%;
   }
   .welcome {
+    text-align: center !important;
     font-size: 50px;
-    margin-top: 40px  ;
-    margin-left: 40px;
+    /* margin-top: 40px  ; */
+    width: fit-content  ;
+margin:40px 40px;
   }
 
   .henna_secret{
-    font-size: 40px;
+    font-size: 50px;
     margin-top: -30px;
     width: 400px;
   }

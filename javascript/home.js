@@ -444,7 +444,7 @@ function renderProducts(arr) {
     let html = arr.map(item => `
         <div class="item">
             <div class="image">
-                <img src="${item.imageUrl1}" class="d-block w-100" alt="...">
+                <img src="${item.imageUrl1}" class="d-block w-100" id="img" alt="...">
             </div>
             <div class="item_info">
                 <h4>${item.title}</h4>
