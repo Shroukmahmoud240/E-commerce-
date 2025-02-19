@@ -313,6 +313,10 @@ text-align: center;
     left: 120px;
     width: 200px;
   }
+  .info
+  {
+    width: 00100%;
+  }
 }
 /* ////////////////////////////////////////// */
 .section-title {
