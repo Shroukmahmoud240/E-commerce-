@@ -57,4 +57,8 @@ function calcPrice(array){
         total+=array[i].count*array[i].price
     }
     return total;
+    if (total==0){
+        window.location="index.html"
+        window.location.reload();
+    }
 }
