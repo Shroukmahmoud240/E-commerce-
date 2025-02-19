@@ -284,26 +284,25 @@ text-align: center;
 /* mediaquery */
 @media (max-width:600px){
   .hello{
-    height: 45%;
+    height: 50%;
   }
   .welcome {
     font-size: 50px;
     margin-top: 40px  ;
-    margin-left: 50px;
+    margin-left: 40px;
   }
-  /* .item_info {
-    color: #01340c;
-  } */
+
   .henna_secret{
     font-size: 40px;
     margin-top: -30px;
     width: 400px;
   }
   .secret{
-    margin: -60px  100px;
+    margin-top: -60px  ;
+    margin-left: 90px;
   }
   .henna{
-    margin-left: 100px;
+    margin-left: 90px;
   }
   .to{
     margin: 50px 30%;
@@ -317,9 +316,7 @@ text-align: center;
     width: 200px;
   }
 }
-#contact{
-  /* margin-bottom: 100%; */
-}
+/* ////////////////////////////////////////// */
 .section-title {
   text-align: center;
   font-size: 1.5rem;

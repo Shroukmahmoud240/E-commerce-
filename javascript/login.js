@@ -12,7 +12,7 @@ loginBtn.addEventListener("click",function(e){
     }else{
         if(getUsername&&getUsername.trim()===username.value &&getpassword&&getpassword.trim()===password.value){
             setTimeout(()=>{
-                window.location="home.html"
+                window.location="index.html"
             } ,1500)
    
 
