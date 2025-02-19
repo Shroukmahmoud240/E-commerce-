@@ -56,12 +56,12 @@ body {
   margin-top: 90px;
 }
 #gap1 {
-  margin-right: 30px;
+  /* margin-right: 0px; */
 }
 .henna_secret {
   height: 100%;
   flex-wrap: wrap;
-  width: fit-content;
+  /* width: fit-content; */
   margin: auto;
 }
 /* the first section animation */
@@ -282,22 +282,22 @@ text-align: center;
 /* mediaquery */
 @media (max-width:600px){
   .welcome {
-    font-size: 70px;
+    font-size: 50px;
     margin-top: 40px  ;
-    margin-left: 40px;
+    margin-left: 35px;
   }
   /* .item_info {
     color: #01340c;
   } */
   .henna_secret{
-    font-size: 50px;
-    margin-top: -30px;
+    font-size: 40px;
+    margin-top: -60px;
   }
   .secret{
-    margin: -10px  auto;
+    margin: -100px  100px;
   }
   .henna{
-    margin-left: 120px;
+    margin-left: 100px;
   }
   .to{
     margin: 20px auto;
