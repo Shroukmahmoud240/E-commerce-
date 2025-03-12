@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Henna`s Secret</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+</head>
+<body>
+
+
+
+
+
+    <div class="container-fluid " style="margin-top: 80px;">
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+          <div class="container-fluid" >
+            <img src="images/veiw.png" class="img rounded-circle" width="50" alt=""/>
+            <h4 class="name ms-3 text-white pe-3" style=" border-right: 2px solid rgba(190, 190, 190, 0.249);font-weight: bold; ">Henna`s Secret</h4>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-primary" href="index.html" role="button" >Home page </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-primary" href="#" role="button" >Shop Now</a>
+                </li>
+                <li class="nav-item" id="user_info">
+                  <a class="nav-link text-primary" href="#" id="user_data"></a>
+                </li>
+              </ul>
+  
+              <form class="d-flex">
+                <input class="form-control me-2"  oninput="search(this.value)" type="text" placeholder="Search"/>
+  
+                <button class="btn btn-secondary me-3 link1" type="button">
+                  <a href="register.html" style="text-decoration: none; color: aliceblue">Register</a>
+                </button>
+                <button type="button"class="btn btn-secondary link2" data-bs-toggle="modal" data-bs-target="#myModal">
+                  <a href="login.html"style="text-decoration: none; color: aliceblue">Login</a>
+                </button>
+                <div class="cart_div">
+                  <i class="fa-solid fa-cart-shopping" id="cart"  onclick="veiwItems()" data-bs-toggle="tooltip" title="Your Cart"></i>
+                  <span class="items_num"></span>
+                </div>
+                <div class="cart_products">
+                  <div class="items_titles" style="overflow:scroll; max-height:400px ;"></div>
+                  <a href="The_cart.html" style="color: rgb(247, 246, 244);">veiw all products</a>
+                </div>
+                <i class="fa-regular fa-circle-user" id="ueserpage"  data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
+                <i class="fa-solid fa-right-from-bracket" id="logout" data-bs-toggle="tooltip" title="LogOut"></i>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
+
+      <div class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title">Your Account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body" id="userinfo">
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner container" style="padding-left: 40px;">
+
+      <div class="carousel-item active">
+          <div class="row " id="products1"></div>
+      </div>
+     
+      <div class="carousel-item">
+          <div class="row  " id="products2"></div>
+      </div>
+  
+  </div>
+
+
+  <button class="carousel-control-prev move-icons" type="button" data-bs-target="#productCarousel" data-bs-slide="prev" onclick="change1()" id="prev"data-bs-toggle="tooltip" title="Previous">
+      <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next  move-icons" type="button" data-bs-target="#productCarousel" data-bs-slide="next" onclick="change2()"id="next"data-bs-toggle="tooltip" title="Next">
+      <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<div class="circles d-flex">
+    <div class="circle1 me-2" style="background-color:rgb(38, 0, 255);"></div>
+<div class="circle2 ">
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row copy-right text-white mt-3"styel="width:80vw ;box-sizing:border-box;;">
+    <div class="text-center"style="height:50px;">
+        <p>&copy; 2020 SHIMA HUSSEIN EL SAID GOOD COMPANY. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+    <script src="bootstrap.js.map"></script>
+    <script src="bootstrap.min.js"></script>
+   <script src="javascript/searcheditem.js"></script>
+</body>
+</html>

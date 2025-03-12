@@ -1,0 +1,421 @@
+body {
+  /* background-color: #8e9e81; */
+  /* background-color: #647c58; */
+  background-color: rgb(248, 248, 248);
+  overflow-x: hidden; 
+}
+* {
+  box-sizing: border-box;
+}
+
+.navbar li:not(.dropdown-menu li) {
+  margin-left: 20px;
+  margin-top: -9px;
+  font-size: larger;
+  transition: 1s;
+}
+.navbar li a {
+  color: #FDF7F4 !important;
+}
+.navbar li a:hover {
+  color: rgb(254, 254, 254) !important;
+  text-decoration: underline;
+  /* transition: .3S;
+  font-weight: bold; */
+}
+.navbar .btn {
+  background-color: rgb(141, 141, 143);
+}
+.navbar {
+  background-color: #13240fc7;
+}
+.copy-right{
+  /* background-color: #173a04; */
+  background-color: #a4a4a4c7;
+  padding-top: 25px;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+.fView {
+  height: 100vh;
+  padding: 0%;
+  background: url(../images/png-transparent-leaf-leaves-watercolor-painting-leaf-branch-thumbnail.png) center no-repeat;
+  background-size: 100% 100% ;
+}
+.hello {
+  width: 100%;
+  height: 50%;
+  font-weight: 700;
+  transform: translate(50% 50%);
+  margin: auto;
+  /* color: aliceblue; */
+ color: rgb(4, 88, 16) ;
+  font-size: 70px;
+  letter-spacing: 8px;
+}
+.welcome {
+  height: 80%;
+  font-size: 120px;
+  width: fit-content;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.to{
+
+  /* border: 1px solid red; */
+  margin-top: 90px;
+}
+#gap1 {
+  margin-right: 30px;
+}
+.henna_secret {
+  height: 100%;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: auto;
+}
+/* the first section animation */
+
+.l2,
+.l3,
+.l4,
+.l5,
+.l6 {
+  opacity: 0;
+  animation: moving 1s ease-out .5s  forwards;
+
+}
+
+.l2 {
+  animation-delay: 1s;
+}
+.l3 {
+  animation-delay: 1.5s;
+}
+.l4 {
+  animation-delay: 2s;
+}
+.l5 {
+  animation-delay: 2.5s;
+}
+
+@keyframes moving {
+  from {
+    opacity: 0;
+    margin-top: 0;
+  }
+  to {
+    opacity: 1;
+    margin-top: 18%;
+  }
+}
+.henna_secret,.welcome{
+    color: #685752;
+    animation:turning 2s linear 2s infinite normal none;
+
+}
+@keyframes turning{
+  0%{
+    color: #685752;
+  }
+  30%{
+    color: #685752b1;
+  }
+
+  100%{
+    color: #685752;
+  }
+}
+
+
+#products {
+  margin-top: 90px;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  gap: 10px;
+  justify-content: space-evenly;
+}
+.item {
+  cursor: default;
+  width: 250px;
+  height: 450px;
+  position: relative;
+}
+.price_div {
+  display: flex;
+}
+.addcart {
+  margin-left: 85%;
+  margin-top: 104%;
+  color: #01340c;
+    font-size: x-large;
+  position: absolute;
+  z-index: 5;
+  cursor: pointer;
+  font-size: xx-large;
+  width: 80px;
+  margin-left: 76%;
+  margin-top: 110%;
+}
+/* .addcart{
+ 
+} */
+/* .addcart:hover{
+  
+} */
+.removecart{
+  font-size: x-large;
+  width: 80px;
+  margin-left: 84%;
+  margin-top: 105%;
+  color: white;
+  cursor: pointer;
+}
+
+.item_info {
+  padding-left: 10px;
+  position: absolute;
+  width: 80%;
+  opacity: 0;
+  bottom: 0;
+  width: 80%;
+  height: 35%;
+  top: 280px;
+  color: rgb(1, 48, 3);
+  transition: 1s;
+}
+#img {
+  position: absolute;
+}
+/* animation fir the products */
+#img:hover {
+  animation: my_animation 1.5s ease-in-out 0.5s infinite alternate none;
+  border-radius: 10px 70px;
+  box-shadow: 2px 2px 20px 10px rgba(1, 58, 9, 0.457);
+  margin-top: -10px;
+  transition: 0.5s;
+  border-radius: 70px;
+}
+@keyframes my_animation {
+  0% {
+    margin-top: -10px;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
+.image:hover ~ .item_info {
+  width: 80%;
+  height: 35%;
+  opacity: 1;
+}
+#cart,#ueserpage,#logout{
+  display: none;
+  color: aliceblue;
+  font-size: x-large;
+  cursor: pointer;
+  margin:10px 20px;
+}
+#cart:hover,#ueserpage:hover,#logout:hover{
+  color: #33231e;
+}
+#user_account{
+  font-size:70px ;
+  margin-bottom: 30px;
+}
+
+
+.cart_products{
+  display: none;
+  background-color: #997C70;
+  color: aliceblue;
+  position: absolute;
+  height: fit-content;
+  width: 300px;
+  text-align: center;
+  top: 55px;
+  border: 1px solid black;
+}
+.items_num{
+  color: aliceblue;
+  position: absolute;
+  text-align: center;
+  width: 20px ;
+  background-color: #685752;
+  display: none;
+  height: 25px;
+  bottom: 20px;
+  left:15px;
+  border-radius: 50%;
+}
+.cart_div{
+  position: relative;
+}
+.totalPrice{
+  text-align: center;
+  font-size: larger;
+  margin: auto;
+  color: white;
+  width:  350px;
+  height: 100px;
+  border: 1px solid rgb(247, 246, 246);
+}
+#totalPriceP{
+  font-size: x-large;
+}
+.links{
+text-align: center;
+}
+.links p{
+  margin-top: 10px;
+}
+.links a{
+  box-sizing: border-box;
+  margin:auto ;
+  width: fit-content;
+  height: 40px;
+  display: block;
+  color: rgb(243, 245, 243);
+  transition: .5s;
+}
+.links a:hover{
+  font-weight: bold;
+  font-size: larger;
+  text-shadow:  3px  3px 10px  black;
+}
+/* mediaquery */
+
+.contact{
+  font-size: xx-large;
+margin-left: 95%;
+display: flex;
+
+flex-direction: column;
+}
+#whatsApp,#massenger,#phone{
+  color: #048921;
+  bottom: 140px;
+  cursor: pointer;
+    background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding-top: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  position: fixed;
+}
+#phone{
+  color: #01340c;
+  background-color: #fdf7f400;
+  bottom: 20px;
+}
+#massenger{
+  bottom: 80px;
+  /* background-color: white; */
+
+  /* color:  #0084FF;    */
+   background: linear-gradient(50deg, #0099FF, #A033FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+ .move-icons{
+  margin-top: 130%;
+  background-color: #01340c;
+  width: 70px;
+  height: 40px;
+ }
+ #prev{
+  display: none;
+ }
+ .circles{
+  margin-left: 48%;
+  margin-bottom: 40px;
+ }
+.circle2,.circle1{
+  width: 10px;
+  height: 10px;
+  border-radius:50% ;
+  background-color: #6c6969c9;
+}
+.parent1{
+  /* background-color: #ddedd9; */
+  margin-bottom: 30px;
+  padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.parent1 img{
+  width: 100%;
+  border-radius: 50%;
+}
+.dicription{
+  padding-left: 20px;
+  margin-top: 40px;
+  font-size: x-large;
+  color: #4a3d39;
+}
+.dicription ul{
+  list-style-type:none;
+}
+.dicription h2{
+  font-size: 50px;
+  margin-bottom:30px;
+}
+.dicription h4{
+  margin-top: 50px;
+}
+.dicription p{
+  margin-top: 20px;
+  font-size: large;
+}
+
+
+
+ @media (max-width:600px){
+  .welcome {
+    font-size: 70px;
+    margin-top: 40px  ;
+    margin-left: 15px;
+  }
+  /* .item_info {
+    color: #01340c;
+  } */
+  .henna_secret{
+    font-size: 50px;
+    margin-top: -30px;
+  }
+  .secret{
+    margin: -10px  auto;
+  }
+  .henna{
+    margin-left: 120px;
+  }
+  .to{
+    margin: 20px auto;
+  }
+  .products{
+    align-items: center;
+  }
+  .cart_products{
+    top: 160px;
+    left: 285px;
+    width: 200px;
+  }
+  #gap1{
+    margin: 0;
+  }
+  .move-icons{
+    margin-top: 1735%;
+    /* background-color: red; */
+  }
+  #whatsApp,#massenger,#phone{
+    margin-left: -10%;
+  }
+}
